@@ -7,16 +7,21 @@
 
 ---
 
-## 🧠 Motivation
+## 🚀 Features
 
-Miners and cave explorers often face hazardous working environments, including poor air quality, risk of falls, and the need for emergency communication. 
-
-This smart helmet aims to:
-- Monitor environmental conditions in real-time.
-- Detect accidents like falls.
-- Provide an SOS alert feature for emergencies.
-
-By integrating sensors, wireless communication, and microcontroller technologies, the helmet improves safety and enhances emergency response—fulfilling the increasing need for smart safety gear in industrial settings.
+- 🔔 **Real-Time Alerts**: Triggers alerts when gas concentration, temperature, or humidity exceed predefined thresholds.
+- 📡 **LoRa-Based Communication**: Transmits safety-critical data such as fall detection and gas levels over a LoRa network for long-range coverage.
+- 🌐 **Wi-Fi Dashboard**: ESP8266 acts as a Wi-Fi access point, hosting an interactive web interface that displays:
+  - Temperature
+  - Humidity
+  - Gas levels
+  - Fall status
+  - Emergency alerts
+- 🚨 **Emergency Response**: Activates a buzzer in case of:
+  - Fall detection
+  - Hazardous gas concentration
+  - SOS button press
+- 🎨 **Color-Coded Web UI**: The web interface displays sensor data and status updates using color codes for easy interpretation by users and supervisors.
 
 ---
 
@@ -26,30 +31,16 @@ By integrating sensors, wireless communication, and microcontroller technologies
   <img src="images/r.png" alt="System Implementation" width="500"/>
 </p>
 
-The helmet comprises the following modules:
+The helmet comprises the following components:
 
-- **Gas Detection:** MQ-2 sensor for identifying hazardous gases.
-- **Fall Detection:** MPU6050 accelerometer and gyroscope.
-- **Environmental Monitoring:** DHT11 for temperature and humidity.
-- **Communication Modules:**  
-  - ESP8266 for Wi-Fi-based data transmission  
-  - LoRa for long-range emergency messaging
-- **Emergency Signaling:** SOS button and buzzer
-
----
-
-## 🔩 Component Breakdown
-
-| Component       | Function                                                                 |
-|----------------|--------------------------------------------------------------------------|
-| **MQ-4 Sensor** | Detects methane and combustible gases. Outputs analog signal.           |
-| **MPU6050**     | 3-axis gyroscope and accelerometer for motion and fall detection.       |
-| **DHT11**       | Measures temperature and humidity (digital output).                     |
-| **ESP8266**     | Wi-Fi communication for real-time data visualization.                   |
-| **LoRa**        | Low-power, long-range communication in remote areas.                    |
-| **Buzzer**      | Audible alerts for hazards or emergencies.                              |
-| **Power Supply**| Rechargeable Li-ion battery for portable energy.                        |
-
+**Module**             | **Component**        | **Function**                                                                 |
+|------------------------|----------------------|------------------------------------------------------------------------------|
+| **Gas Detection**      | MQ-2 / MQ-4          | Detects methane and other combustible gases; outputs analog signal.         |
+| **Fall Detection**     | MPU6050              | 3-axis gyroscope and accelerometer for motion and fall detection.           |
+| **Environment Sensing**| DHT11                | Measures temperature and humidity with digital output.                      |
+| **Communication**      | ESP8266, LoRa        | ESP8266 enables real-time Wi-Fi data visualization; LoRa handles long-range, low-power messaging. |
+| **Emergency Alerts**   | Buzzer, SOS Button   | Audible alert and manual SOS triggering in case of emergency.               |
+| **Power Supply**       | Rechargeable Battery | Li-ion battery ensures portable and efficient power.                        |
 ---
 
 ## 🔁 System Flowchart
