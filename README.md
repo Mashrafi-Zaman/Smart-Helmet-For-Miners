@@ -1,6 +1,11 @@
  **SMART** **HELMET** **FOR** **MINERS**
 ---
 
+
+<p align="center"> <img src="images/h.png" alt="System Overview" width="500"/> </p>
+
+
+---
 **Motivation:**
 
  Miners and cave explorers often face hazardous working environments,
