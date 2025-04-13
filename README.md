@@ -72,15 +72,6 @@ The helmet comprises the following components:
 
 ---
 
-## ✅ Results
-
-- 🔥 Gas detection accuracy: **~90%** (post calibration)
-- 🧍‍♂️ Fall detection via MPU6050: **Jerk threshold = 300,000 m/s³**
-- 🌐 Real-time environment dashboard accessible via local IP
-- 📡 LoRa alert transmission time: **< 1 second**
-- 🎯 Lightweight, ergonomic design suitable for practical use
-
----
 
 ## 📊 Wi-Fi Dashboard
 
@@ -97,6 +88,17 @@ Access via: **[192.168.4.1](http://192.168.4.1)**
 <p align="center">
   <img src="images/l.png" alt="LoRa Output" width="600"/>
 </p>
+
+---
+
+
+## ✅ Results
+
+- 🔥 Gas detection accuracy: **~90%** (post calibration)
+- 🧍‍♂️ Fall detection via MPU6050: **Jerk threshold = 300,000 m/s³**
+- 🌐 Real-time environment dashboard accessible via local IP
+- 📡 LoRa alert transmission time: **< 1 second**
+- 🎯 Lightweight, ergonomic design suitable for practical use
 
 ---
 
