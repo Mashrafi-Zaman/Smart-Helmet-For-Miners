@@ -1,7 +1,7 @@
  **SMART** **HELMET** **FOR** **MINERS**
+---
 
-
- **Background** **and** **Motivation:**
+**Motivation:**
 
  Miners and cave explorers often face hazardous working environments,
  including poor air quality, the risk of falls, and the need for
@@ -14,13 +14,10 @@
  a helmet aligns with the growing need for smart safety equipment in
  industries, ensuring both worker safety and operational efficiency.
 
+---
+ **Implementation:**
 
- 
- **Research** **Methodology** **&** **Implementation:**
-
-
-<img src="./r.png"
-style="width:4.57778in;height:4.00417in" />
+<p align="center"> <img src="images/r.png" alt="System Overview" width="500"/> </p>
 
 
 The system consists of:
@@ -39,29 +36,32 @@ The system consists of:
  • **Emergency** **signalling**: SOS button and buzzer for immediate
  alerts.
 
-
+---
 **Component** **Basics:**
 
  1\. **MQ-4** **Sensor**: Detects methane and other combustible gases,
  providing analog output proportional to gas concentration.
-
+ 
  2\. **MPU6050**: Combines a 3-axis gyroscope and accelerometer for
  precise motion tracking.
-
+ 
  3\. **DHT11**: Measures temperature and humidity with digital output.
-
+ 
  4\. **ESP8266**: Enables Wi-Fi communication for real-time data
-  visualization. 5. **LoRa**: Ensures long-range, low-power> communication in remote areas. 6. **Buzzer**: Provides audible alerts
-  during emergencies.
-
+  visualization. 
+  
+ 5\. **LoRa**: Ensures long-range, low-power> communication in remote areas. 
+ 
+ 6\.**Buzzer**: Provides audible alerts during emergencies.
+ 
  7\. **Power** **Supply**: A rechargeable Li-ion battery powers the
  system efficiently.
 
+---
 
 **Flowchart:**
 
-<img src="./f.png"
-style="width:4.16667in;height:3.39861in" />
+<p align="center"> <img src="images/f.png" alt="System Flowchart" width="500"/> </p>
 
 let's break down each block in the flowchart:
 
@@ -123,43 +123,39 @@ immediate emergency alerts.
 The system continues to operate in this loop, monitoring the environment
 and responding to hazards or manual triggers.
 
+---
+**Wire** **connection** **between** **ESP8266** **and** **LoRa**
 
-
-**Wire** **connection** **between** **ESP8266** **and**
-
-<img src="./c.png"
-style="width:3.54375in;height:3.70486in" />
+<p align="center"> <img src="images/c.png" alt="ESP8266 to LoRa Connection" width="450"/> </p>
  
- 
-
- **Final** **Outcome** **Analysis:**
+ ---
+ **Result:**
 
  The Smart Helmet successfully:
 
  • Detects hazardous gases with an accuracy of 90% based on calibration
  tests. 
+ 
  • Identifies falls using a jerk magnitude threshold of 300,000
  m/s³.
+ 
  • Provides real-time environmental data on a web-based dashboard.
+ 
  • Sends emergency alerts through LoRa in under 1 second.
+ 
  • Ensures lightweight and ergonomic design for practical use.
 
-<img src="./s1siubjs.png"
-style="width:3.05278in;height:3.56389in" /><img src="./q0erm51u.png"
-style="width:3.21181in;height:3.56042in" />
-
-
- 
+ ---
 **Dashboard** **(192.168.4.1)** 
-<img src="./d.png"
-style="width:3.05278in;height:3.56389in" />
 
 
+<p align="center"> <img src="images/d.png" alt="Wi-Fi Dashboard" width="400"/> </p>
 
-** **LoRa** **receiver** 
+---
+**LoRa** **Receiver** 
 
-<img src="./l.png" style="width:6.5in;height:0.91528in" />
 
+<p align="center"> <img src="images/l.png" alt="LoRa Output" width="600"/> </p>
 
 
 
